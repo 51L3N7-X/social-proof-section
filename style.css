@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+}
+
+main {
+  width: 80%;
+  margin: 6rem auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.top p {
+  color: hsl(303, 10%, 53%);
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(300, 24%, 96%);
+  padding: 0.7rem 1.5rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 0.7rem;
+  border-radius: 10px;
+}
+
+.stars {
+  margin-right: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ratings {
+  margin-top: 1rem;
+}
+
+.ratings div:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.ratings div:nth-child(3) {
+  margin-left: 2rem;
+}
+
+.rate-text {
+  font-weight: bold;
+  color: hsl(300, 43%, 22%) !important;
+}
+
+.bottom {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.review-card {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  max-width: 350px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.person img {
+  width: 2.5rem;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.name {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.rule {
+  color: hsl(333, 80%, 67%);
+  font-weight: 200;
+}
+
+.review-text {
+  color: white;
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
+.one {
+  margin-bottom: 2rem;
+}
+
+.two {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.three {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 977px) {
+  body {
+    background-image: url(./images/bg-pattern-top-mobile.svg),
+      url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  main {
+    margin: 6rem 1rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .heading {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .heading h1 {
+    text-align: center;
+  }
+
+  .stars {
+    margin: 0;
+  }
+
+  .ratings {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .card {
+    margin-left: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding-left: 0;
+    padding-right: 0;
+    width: 96%;
+    gap: 0.5rem;
+  }
+
+  .bottom {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0;
+    /* gap: 0.5rem; */
+  }
+
+  .review-card {
+    margin: 0;
+    max-width: 96%;
+  }
+}
